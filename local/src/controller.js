@@ -1,10 +1,12 @@
 var {serialParser} = require('./serial/parser.js');
 
+//create some default values for function you need the arduino to do
 const READY = 1;
 const SET_PIN = 2;
 const BUTTON_PRESSED = 3;
 const BROADCAST = 127;
 
+//create the class used to control the arduino
 class ArduinoController {
   constructor() {
     var _this = this;
@@ -13,6 +15,7 @@ class ArduinoController {
     _this.config = {
     };
 
+    //this is how you get data back from the arduino;
     parser.on(BUTTON_PRESSED, (data)=> {
       console.log(`Button ${data[0]} state is ${data[1]}`);
     });
@@ -28,6 +31,7 @@ class ArduinoController {
       }
     });
 
+    // this is how you send data to the arduino
     _this.setPin = (pin, state)=>{
       parser.sendPacket([1, SET_PIN, pin, state]);
     }
