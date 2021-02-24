@@ -1,8 +1,8 @@
-# electron-quick-start
+# Automated Tip Tilt Example Program
 
-**Clone and run for a quick way to see Electron in action.**
+**Demonstrate some simple webcam pixel manipulation and arduino communication.**
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) to demonstrate how to grab webcam data and control an arduino.
 
 **Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
 
@@ -20,9 +20,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/heidgera/CCIS-2020-023-AutoTipTiltExample TipTiltExample
 # Go into the repository
-cd electron-quick-start
+cd TipTiltExample
 # Install dependencies
 npm install
 # Run the app
