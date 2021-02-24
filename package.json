@@ -1,31 +1,29 @@
 {
-    "name": "electron-serialport",
-    "version": "1.0.2",
-    "description": "A minimal Electron application with node serialport",
-    "main": "main.js",
-    "scripts": {
-        "start": "electron .",
-        "install": "electron-rebuild"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:serialport/electron-serialport.git"
-    },
-    "keywords": [
-        "Electron",
-        "quick",
-        "start",
-        "tutorial",
-        "demo"
-    ],
-    "author": "GitHub",
-    "license": "CC0-1.0",
-    "devDependencies": {
-        "electron": "^11.2.0",
-        "electron-rebuild": "^2.3.4"
-    },
-    "dependencies": {
-        "serialport": "^9.0.6",
-        "tableify": "^1.1.0"
-    }
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install": "electron-rebuild"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^11.2.0",
+    "electron-rebuild": "^2.3.4"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2",
+    "serialport": "^9.0.6"
+  }
 }
