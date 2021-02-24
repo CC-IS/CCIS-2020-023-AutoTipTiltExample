@@ -31,6 +31,16 @@ npm start
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
+## How it works:
+
+When you call 'npm start', it starts an instance of Electron in the current folder using `main.js`. In this instance, main.js then launches a browser window which opens `local/index.html` as specified in this line of `main.js`:
+
+```
+mainWindow.loadFile(path.join(__dirname, '/local/index.html'))
+```
+
+Upon launching `local/index.html`, the browser calls all scripts reference in `local/index.html`, primarily [`local/src/app.js`](https://github.com/heidgera/CCIS-2020-023-AutoTipTiltExample/blob/master/local/src/app.js). This script then loads other javascript files using the `require` syntax. Refer to the comments in code for further details.
+
 ## Resources for Learning Electron
 
 - [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
