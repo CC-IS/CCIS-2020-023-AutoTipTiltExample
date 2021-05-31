@@ -24,6 +24,6 @@
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "fluent-ffmpeg": "^2.1.2",
-    "serialport": "^9.0.6"
+    "serialport": "^9.1.0"
   }
 }
